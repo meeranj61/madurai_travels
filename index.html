@@ -27,6 +27,30 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .animated-text {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUpColor 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeInUpColor {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+        color: #000; /* Initial color */
+      }
+      50% {
+        color: #ff6347; /* Intermediate color */
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #ff4500; /* Final color */
+      }
+    }
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -60,7 +84,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>A mission to provide the world-class Touriest cabs and taxi service experience.</h1>
+            <h1 class="animated-text">A mission to provide the world-class Touriest cabs and taxi service experience.</h1>
             <p>MADURAI TRAVELS CAB SERVICE is now available in several places, with thousands of delighted business partners and clients.</p>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
@@ -87,7 +111,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/websites/car_images.jpg" alt=""></div>
+                  <div class="card-bg"><img src="assets/img/websites/southindia-travels-innova-car.jpg" alt=""></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -103,7 +127,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/websites/car_images.jpg" alt=""></div>
+                  <div class="card-bg"><img src="assets/img/websites/southindia-travels-crysta-car.jpg" alt=""></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -119,7 +143,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/websites/car_images.jpg" alt=""></div>
+                  <div class="card-bg"><img src="assets/img/websites/southindia-travels-sedan-car.jpg" alt=""></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -135,7 +159,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/websites/car_images.jpg" alt=""></div>
+                  <div class="card-bg"><img src="assets/img/websites/southindia-travels-tempo-car.jpg" alt=""></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -237,10 +261,11 @@
           <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>A Complete Business Class Ride.
+                <h3>New experience of Traveling
+
                 </h3>
                 <p class="fst-italic">
-                  Make a nice and comfortable ride with MADURAI TRAVELS. Yes, MTS provides a complete business class experience in well-maintained business class vehicles. This segment's vehicles are sedans, which provide greater comfort during your journeys. Use these taxis for convenient family travel and work trips. Better suited for long journeys and outstations.....
+                  Take your family along and enjoy long, wonderful travels with MADURAI TRAVELS. Yes, MTS currently offers Luxury Toyota Crysta for outstation rentals. Enjoy your neighborhood picnics, shopping, wedding receptions, and business meetings with MTS.
 
                 </p>
                 <ul>
@@ -251,7 +276,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/websites/southindia-travels-sedan-car.jpg" alt="" class="img-fluid">
+                <img src="assets/img/websites/southindia-travels-crysta-car.jpg" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -259,10 +284,13 @@
           <div class="tab-pane fade" id="features-tab-4" role="tabpanel">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>A Complete Business Class Ride.
+                <h3>We bring you to the future Travel.
+
                 </h3>
                 <p class="fst-italic">
-                  Make a nice and comfortable ride with MADURAI TRAVELS. Yes, MTS provides a complete business class experience in well-maintained business class vehicles. This segment's vehicles are sedans, which provide greater comfort during your journeys. Use these taxis for convenient family travel and work trips. Better suited for long journeys and outstations.....
+                  ooking for dependable and pleasant transportation for your future trip. We specialize in delivering high-quality travel solutions that make your visits joyful and stress-free.
+Our Fleet Discover our excellent inventory of vehicles, which includes spacious tempo travelers with 12 seats, 14 seats, and 18 seats. Whatever your trip group size, we have the right vehicle for you.
+Our cars are kept to the highest standards and are outfitted with modern facilities to ensure a safe and enjoyable journey for all customers.
 
                 </p>
                 <ul>
@@ -273,7 +301,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/websites/southindia-travels-sedan-car.jpg" alt="" class="img-fluid">
+                <img src="assets/img/websites/southindia-travels-tempo-car.jpg" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End tab content item -->

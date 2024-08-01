@@ -59,14 +59,16 @@
   });
 
   /**
-   * Preloader
-   */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
+ * Preloader
+ */
+const preloader = document.querySelector('#preloader');
+if (preloader) {
+  window.addEventListener('load', () => {
+    setTimeout(() => {
       preloader.remove();
-    });
-  }
+    }, 1000); // 5000 milliseconds = 5 seconds
+  });
+}
 
   /**
    * Scroll top button

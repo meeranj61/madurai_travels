@@ -858,9 +858,9 @@ section,
 
 .hero h1 {
   margin: 0;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 40px;
   line-height: 56px;
+  text-transform: math-auto;
 }
 
 .hero p {

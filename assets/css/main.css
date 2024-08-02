@@ -2423,6 +2423,11 @@ section,
   }
 }
 
+.colors_sub{
+    color: var(--nav-hover-color);
+    font-weight: 600;
+}
+
 
 
 

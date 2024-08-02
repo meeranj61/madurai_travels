@@ -669,30 +669,30 @@ h6 {
   overflow: hidden;
   background: var(--background-color);
   transition: all 0.6s ease-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #preloader:before {
   content: "";
-  width: 100px; /* Adjust the width as per your GIF size */
-  height: 100px; /* Adjust the height as per your GIF size */
-  background-image: url('../img/b7C.gif'); /* Corrected path */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-/* #loading {
-  background: url('/b7C.gif') no-repeat center center;
-  position: absolute;
+  position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  height: 100%;
-  width: 100%;
-  z-index: 9999999;
-} */
+  border: 6px solid #ffffff;
+  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /*--------------------------------------------------------------
 # Scroll Top Button
@@ -1396,17 +1396,6 @@ section,
   opacity: 0;
 }
 
-.team .member .member-img .social a {
-  transition: 0.3s;
-  color: var(--contrast-color);
-  font-size: 20px;
-  margin: 0 8px;
-}
-
-.team .member .member-img .social a:hover {
-  color: var(--accent-color);
-}
-
 .team .member .member-info {
   margin-top: 30px;
 }
@@ -1430,11 +1419,7 @@ section,
   font-size: 14px;
 }
 
-.team .member:hover .member-img .social {
-  padding-bottom: 0;
-  visibility: visible;
-  opacity: 1;
-}
+
 
 /*--------------------------------------------------------------
 # Pricing Section
